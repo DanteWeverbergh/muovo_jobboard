@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http://localhost:10010</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/alerts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/auth/forgotpassword</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/auth/login</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/auth/newpassword</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/auth/register</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/auth/register/jobseeker</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/directory</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/home</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/hrtalks</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/hrtalks/detail</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/jobs</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/jobs/admin</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/jobs/admin/create</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/jobs/edit</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/jobs/sectors</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/jobs/test</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/mycompany</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/mypackages</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/mypackages/buy</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/packages</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/pricing</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/privacypolicy</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/profile</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/sectors</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/server-sitemap.xml/categories</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/server-sitemap.xml/companies</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/server-sitemap.xml/hrtalks</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/server-sitemap.xml/jobs</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/server-sitemap.xml/sectors</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+<url><loc>http://localhost:10010/test</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-09T14:08:41.591Z</lastmod></url>
+</urlset>

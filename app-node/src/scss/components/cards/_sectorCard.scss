@@ -1,0 +1,49 @@
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.sectorCards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.sectorCard {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: $border-radius;
+  width: 250px;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+
+  cursor: pointer;
+  &__title {
+    font-size: 16px;
+    color: $purple;
+  }
+
+  &__amount {
+    color: $purple;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: $yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: $light-grey;
+  }
+}

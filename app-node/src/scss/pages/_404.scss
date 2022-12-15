@@ -1,0 +1,17 @@
+// 404 page
+
+.notFound {
+  // height: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 50px;
+    }
+    height: 85vh;
+    color: $purple;
+  }
+}

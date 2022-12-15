@@ -1,0 +1,26 @@
+.companyOverview {
+  margin-top: 100px;
+}
+
+//detail
+
+.companyDetail {
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__title {
+    }
+    &__socials {
+      display: flex;
+      gap: 25px;
+      &__icon {
+        cursor: pointer;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

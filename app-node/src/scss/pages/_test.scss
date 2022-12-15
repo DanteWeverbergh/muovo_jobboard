@@ -1,0 +1,13 @@
+.test {
+  width: 100vh;
+  img {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+
+    &:hover {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: $purple;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 50px;
+  }
+  &__icon {
+    font-size: 35px;
+    color: $line-grey;
+  }
+}
+
+.cardsFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: flex-start;
+  margin-bottom: 75px;
+  margin-top: 75px;
+}

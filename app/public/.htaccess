@@ -1,0 +1,44 @@
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# jwt auth
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+
+# jwt auth
+#RewriteCond %{HTTP:Authorization} ^(.*)
+#RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+#SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+
+#fastcgi_pass_header Authorization;
+
+
+
+
+</IfModule>
+
+
+
+
+#       <IfModule mod_headers.c>
+#            Header set Access-Control-Allow-Origin "*"
+#       </IfModule>
+
+
+# END WordPress

@@ -1,0 +1,88 @@
+.AdminJobCard {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: $border-radius;
+  width: 550px;
+  padding-top: 30px;
+  background-color: white;
+
+  &__header {
+    position: relative;
+    //
+    &__status {
+      //
+      background-color: $light-grey;
+      width: 55px;
+      padding-left: 30px;
+      padding-right: 10px;
+      color: $purple;
+      font-weight: bold;
+
+      &__red {
+        height: 30px;
+        width: 20px;
+        background-color: $red;
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      &__green {
+        height: 30px;
+        width: 20px;
+        background-color: $green;
+        border-radius: 0px 10px 10px 0px;
+      }
+    }
+
+    &__applications {
+      //
+      position: absolute;
+      right: 30px;
+      top: 0px;
+      color: $line-grey;
+    }
+  }
+
+  &__content {
+    //
+    margin-left: 30px;
+
+    &__title {
+      color: $purple;
+    }
+  }
+
+  &__footer {
+    //
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $line-grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+
+    &__buttons {
+      display: flex;
+      gap: 20px;
+      button {
+        background-color: $yellow;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        color: $purple;
+        cursor: pointer;
+        box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.16);
+
+        &:hover {
+          background-color: $purple;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  gap: 3px;
+}

@@ -1,0 +1,15 @@
+.jobFilters {
+  background-color: $light-grey;
+  margin: 0px 50px;
+  margin-bottom: 50px;
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+
+  align-items: center;
+
+  &__icon {
+    cursor: pointer;
+  }
+}

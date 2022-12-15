@@ -1,0 +1,108 @@
+.pricing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.packageCards {
+  box-sizing: border-box;
+  //
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: $border-radius;
+  background-color: white;
+
+  width: 400px;
+  height: 700px;
+
+  &__title {
+    margin: 0px;
+    background-color: $yellow;
+    padding: 20px 0px;
+    border-radius: $border-radius $border-radius 0px 0px;
+    font-size: 35px;
+    color: white;
+  }
+
+  &__content {
+    &__info {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 45px;
+      line-height: 40px;
+    }
+
+    &__price {
+      color: $purple;
+      margin-top: 30%;
+      h2 {
+        margin-bottom: 0px;
+        font-size: 35px;
+      }
+      &__info {
+        text-align: center;
+        margin: 0px;
+      }
+    }
+
+    &__button {
+      background-color: $light-grey;
+      border: none;
+      box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
+      font-size: 14px;
+      color: $purple;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10%;
+
+      &:hover {
+        background-color: $yellow;
+        box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.selected {
+  background-color: $light-grey;
+
+  width: 420px;
+  height: 720px;
+  z-index: 10;
+
+  .packageCards__title {
+    background-color: $purple;
+  }
+
+  button {
+    background-color: $yellow;
+    margin-top: 10%;
+
+    &:hover {
+      background-color: $purple;
+      color: $yellow;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    height: auto;
+    padding-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

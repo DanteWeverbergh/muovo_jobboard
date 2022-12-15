@@ -1,0 +1,17 @@
+.dragDrop {
+  background-color: white;
+  border-radius: $border-radius;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 20px 40px;
+  color: $purple;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.drag {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

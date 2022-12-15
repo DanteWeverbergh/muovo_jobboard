@@ -1,0 +1,573 @@
+/*
+* Job page
+*/
+
+.centerMobile {
+  width: 30%;
+}
+
+.JobTitle {
+  padding: 0;
+  padding-top: 100px;
+  margin: 0;
+  color: $purple;
+}
+
+.jobs {
+  //
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  justify-content: flex-start;
+}
+
+.searchButton {
+  background-color: $yellow;
+  width: 75px;
+  height: 75px;
+
+  color: $purple;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: $border-radius 0px 0px $border-radius;
+  position: fixed;
+  right: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $purple;
+    color: $yellow;
+  }
+
+  &__icon {
+    font-size: 35px;
+  }
+}
+
+/*
+* search modal
+*/
+
+.searchModal {
+  z-index: 999;
+  //
+  width: 750px;
+  // height: 300px;
+  padding: 25px;
+  &__button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+    font-size: 30px;
+    color: $light-grey;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    &:hover {
+      color: $purple;
+    }
+  }
+  background-color: white;
+
+  &__form {
+    &__input {
+      width: 95%;
+      border: none;
+      background-color: $light-grey;
+      padding: 5px 10px;
+      border-radius: $border-radius;
+      &::placeholder {
+        font-size: 18px;
+        font-weight: normal;
+      }
+    }
+
+    &__selects {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      &__select {
+        background-color: $purple;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: $border-radius;
+        width: 45%;
+      }
+    }
+
+    &__checkboxes {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        background-color: $light-grey;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+          rgba(0, 0, 0, 0.3) 0px 4px 4px -4px inset;
+
+        &:checked {
+          background-color: $purple;
+          text-decoration: line-through;
+        }
+      }
+
+      &__label {
+        margin-left: 10px;
+      }
+
+      &__checkbox {
+      }
+    }
+
+    &__buttonDiv {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    &__button {
+      background-color: $light-grey;
+      color: $purple;
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+/*
+* Job details
+*/
+
+.detailPage {
+  display: flex;
+
+  margin-bottom: 150px;
+}
+
+.jobDetails {
+  padding-left: 100px;
+  padding-right: 15px;
+  box-sizing: border-box;
+
+  width: 70%;
+
+  //
+  &__title {
+    color: $purple;
+    font-size: 45px;
+  }
+
+  &__info {
+    font-size: 20px;
+    &__id {
+      display: flex;
+      gap: 10px;
+      .strong {
+        font-weight: bold;
+      }
+    }
+
+    &__type {
+    }
+
+    &__salary {
+      color: $yellow;
+    }
+  }
+
+  &__content {
+    h3 {
+      color: $purple;
+      font-size: 35px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+  }
+}
+
+.companyInfo {
+  width: 100%;
+  max-width: 500px;
+
+  &__button {
+    background-color: $yellow;
+    color: white;
+    border-radius: $border-radius;
+    border: none;
+    padding: 20px 40px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(
+        124deg,
+        rgba(63, 63, 99, 1) 0%,
+        rgba(94, 94, 170, 1) 0%,
+        rgba(255, 204, 81, 1) 100%
+      );
+    }
+  }
+
+  &__card {
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: $border-radius;
+
+    padding: 25px;
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+      }
+    }
+
+    &__title {
+      color: $purple;
+    }
+
+    &__description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      margin-bottom: 25px;
+
+      font-size: 20px;
+      font-weight: normal;
+      h1 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      h5 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      h6 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+    }
+
+    &__socials {
+      display: flex;
+      justify-content: space-around;
+      color: $purple;
+      cursor: pointer;
+
+      &__icon {
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      button {
+        background-color: $light-grey;
+        border: none;
+        color: $purple;
+        border-radius: 25px;
+        padding: 5px 10px;
+
+        &:hover {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+.aElement {
+  text-decoration: none;
+  color: $purple;
+}
+
+.div {
+  width: 95%;
+}
+
+.searchFilters {
+  margin-left: 50px;
+  margin-right: 125px;
+  display: flex;
+  gap: 15px;
+}
+
+// Multi select
+.multiSelect {
+  .css-b62m3t-container {
+    width: 300px;
+    color: white;
+  }
+  .css-1s2u09g-control {
+    background-color: $purple;
+    border: none;
+  }
+}
+
+.sectors {
+  display: flex;
+  gap: 10px;
+}
+
+.filterReset {
+  border: none;
+
+  color: $purple;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.jobCard__content__excerpt {
+  font-size: 14.5px;
+}
+
+.noJobs {
+  width: 100%;
+  text-align: center;
+}
+
+.centerCards {
+  //background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AdminCards {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
+//multi selects
+.multiSelect {
+  .react-select-container {
+    .react-select__control {
+      border-radius: 10px;
+      border: none;
+
+      .react-select__placeholder {
+        font-size: 18px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.icon {
+  color: $purple;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+@media screen and (max-height: 820px) {
+  .companyInfo {
+    position: sticky;
+  }
+}
+
+.mobileApplyBtn {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .searchButton {
+    display: none;
+  }
+
+  .centerMobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 75px;
+  }
+
+  .detailPage {
+    // display: block;
+
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .companyInfo {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+  }
+  .jobDetails {
+    width: 100%;
+    //background-color: red;
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .backButton {
+    display: none;
+  }
+
+  .mobileApplyBtn {
+    display: block;
+    margin-top: 25px;
+
+    &__button {
+      background-color: $yellow;
+      color: white;
+      border-radius: $border-radius;
+      border: none;
+      padding: 20px 40px;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(
+          124deg,
+          rgba(63, 63, 99, 1) 0%,
+          rgba(94, 94, 170, 1) 0%,
+          rgba(255, 204, 81, 1) 100%
+        );
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchButton {
+    display: none;
+  }
+
+  .detailPage {
+    // display: block;
+
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .companyInfo {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+  }
+  .jobDetails {
+    width: 100%;
+    //background-color: red;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .backButton {
+    display: none;
+  }
+
+  .mobileApplyBtn {
+    display: block;
+    margin-top: 25px;
+
+    &__button {
+      background-color: $yellow;
+      color: white;
+      border-radius: $border-radius;
+      border: none;
+      padding: 20px 40px;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(
+          124deg,
+          rgba(63, 63, 99, 1) 0%,
+          rgba(94, 94, 170, 1) 0%,
+          rgba(255, 204, 81, 1) 100%
+        );
+      }
+    }
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .jobs {
+    gap: $gap;
+  }
+
+  .jobCard {
+    width: 100%;
+  }
+}
+
+.stickyCompany {
+  position: sticky;
+  top: 140px;
+}

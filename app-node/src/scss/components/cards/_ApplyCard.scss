@@ -1,0 +1,77 @@
+.ApplyCard {
+  width: 540px;
+  background-color: red;
+  border-radius: $border-radius;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.22) 5px 5px 20px;
+
+  &__content {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+      color: $line-grey;
+      font-size: 70px;
+
+      cursor: pointer;
+
+      &:hover {
+        color: $purple;
+      }
+    }
+    &__name {
+      color: $purple;
+      font-weight: bold;
+      font-size: 20px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  }
+
+  &__footer {
+    border-top: 1px solid $line-grey;
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.cardsFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}

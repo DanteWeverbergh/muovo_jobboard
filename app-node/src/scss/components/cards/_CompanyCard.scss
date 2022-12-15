@@ -1,0 +1,107 @@
+.companyOverview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.companyCard {
+  cursor: pointer;
+  height: 120px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 25%;
+  border-radius: $border-radius;
+  display: flex;
+  width: 400px;
+
+  &:hover {
+    background-color: $light-grey;
+
+    .companyCard__content__vacancies {
+      color: $yellow;
+    }
+  }
+
+  &__logo {
+    padding: 15px;
+    border-right: 1px solid $line-grey;
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  &__content {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    &__company {
+      &__name {
+        color: $purple;
+      }
+
+      &__sector {
+        margin-top: -35px;
+        font-size: 11px;
+        font-weight: bold;
+        display: flex;
+        gap: 2px;
+      }
+    }
+
+    &__vacancies {
+      margin-left: 15px;
+      font-weight: bold;
+      color: $line-grey;
+      position: absolute;
+      right: 15px;
+
+      &__number {
+        text-align: center;
+        font-size: 20px;
+
+        strong {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //
+
+  .directory {
+    &__cards {
+      width: 100%;
+    }
+  }
+  .companyCard {
+    width: 350px;
+    &__logo {
+      //
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &__content {
+      &__company {
+        &__name {
+          font-size: 15px;
+          margin-bottom: 25px;
+        }
+      }
+
+      &__vacancies {
+        font-size: 15px;
+      }
+    }
+  }
+}

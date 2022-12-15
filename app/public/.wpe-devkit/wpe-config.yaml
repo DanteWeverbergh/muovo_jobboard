@@ -1,0 +1,5 @@
+email: muovojobboard
+ssh_key: /Users/danteweverbergh/Library/Application Support/Local/ssh/wpe-connect
+update_check: false
+analytics: false
+alpha_commands_access: true

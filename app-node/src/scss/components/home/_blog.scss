@@ -1,0 +1,44 @@
+.blogHome {
+  //padding: 100px 200px;
+  padding: 5% 10%;
+
+  &__logo {
+    width: 300px;
+  }
+
+  &__heading {
+    margin-left: 40px;
+  }
+  &__info {
+    width: 75%;
+    color: $purple;
+    font-size: 20px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    justify-content: center;
+    gap: $gap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //
+
+  .blogHome {
+    padding: 0;
+    &__heading {
+      //
+    }
+
+    &__logo {
+      width: 200px;
+    }
+
+    &__info {
+      font-size: 15px;
+    }
+  }
+}

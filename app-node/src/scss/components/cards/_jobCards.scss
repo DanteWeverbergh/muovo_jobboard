@@ -1,0 +1,190 @@
+.jobCard {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: $border-radius;
+  width: 500px;
+  position: relative;
+  padding-bottom: 100px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 40px,
+      rgba(0, 0, 0, 0.23) 0px 12px 12px;
+  }
+
+  &__header {
+    position: relative;
+    font-weight: bold;
+    font-size: 11px;
+    &__companyLogo {
+      img {
+        border-radius: 100%;
+        position: absolute;
+        right: 25px;
+        top: 35px;
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    &__company {
+      margin-top: 25px;
+      background-color: $light-grey;
+      color: $purple;
+      border-radius: 0px 10px 10px 0px;
+      width: fit-content;
+      padding-right: 15px;
+      padding-left: 25px;
+      padding: 10px 15px 10px 25px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: $purple;
+      }
+    }
+
+    &__sector {
+      margin-top: 10px;
+      background-color: $light-grey;
+      color: $purple;
+      width: fit-content;
+      border-radius: 0px 10px 10px 0px;
+      display: flex;
+      padding: 10px 15px 10px 25px;
+
+      &__name {
+        color: black;
+        margin-left: 15px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: $purple;
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &__title {
+      margin: 0;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      color: $purple;
+      font-size: 30px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: $purple;
+      }
+    }
+
+    &__info {
+      &__location {
+        //
+
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: -20px;
+        line-height: 15px;
+      }
+
+      &__jobType {
+        //
+        margin-top: -20px;
+        line-height: 20px;
+      }
+
+      &__salary {
+        //
+        color: $yellow;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: -20px;
+        line-height: 20px;
+      }
+    }
+
+    &__excerpt {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 0;
+
+      background-color: white;
+    }
+  }
+
+  &__line {
+    border-bottom: 1px solid $line-grey;
+    margin-bottom: 25px;
+    background-color: white;
+    padding-top: 25px;
+    display: none;
+  }
+
+  &__footer {
+    //
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    border-radius: 0px 0px $border-radius $border-radius;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    //
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid $line-grey;
+
+    &__time {
+      color: #adadad;
+      &__icon {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+//featuerd
+.jobCard.featured {
+  //background-color: $purple;
+}
+
+.jobCard__header.featured {
+  background-color: white;
+}
+
+.jobCard__content.featured {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  //
+  .jobCard {
+    width: 90%;
+  }
+}
+
+.margin.featured {
+  background-color: $purple;
+  height: 15px;
+  border-radius: $border-radius $border-radius 0px 0px;
+}
+
+.jobCard__footer.featured {
+  background-color: $purple;
+  padding-top: 25px;
+  border-radius: 0px 0px $border-radius $border-radius;
+}
+
+.jobCard__line.featured {
+  margin-bottom: 0;
+}

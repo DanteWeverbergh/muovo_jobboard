@@ -1,0 +1,21 @@
+.categoryArchive {
+  &__title {
+    color: $purple;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    background-color: $purple-light;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+  }
+
+  &__cards {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+  }
+}

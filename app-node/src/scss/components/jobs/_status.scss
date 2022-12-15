@@ -1,0 +1,68 @@
+.status {
+  width: 110px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pending {
+  background-color: $light-grey;
+  color: $status-pending-text;
+}
+
+.good {
+  background-color: $green;
+  color: $green-text;
+}
+
+.rejected {
+  background-color: $red;
+  color: $red-text;
+}
+
+.maybe {
+  color: $status-maybe-text;
+  background-color: $status-maybe;
+}
+
+.good-outline {
+  border: 1px solid $green;
+  color: $green-text;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.maybe-outline {
+  border: 1px solid $status-maybe;
+  color: $status-maybe-text;
+
+  &:hover {
+    background-color: $status-maybe;
+  }
+}
+
+.rejected-outline {
+  border: 1px solid $red;
+  color: $red-text;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.swal2-cancel {
+  color: blue;
+}
+
+/*
+.empty {
+  border: 1px solid $red;
+  background-color: white;
+}
+*/

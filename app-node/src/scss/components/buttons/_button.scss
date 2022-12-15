@@ -1,0 +1,48 @@
+.btn-y {
+  background-color: $yellow;
+  border: none;
+  border-radius: 25px;
+  color: $purple;
+
+  height: 35px;
+  width: 69px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $purple;
+    color: $yellow;
+  }
+}
+
+.button {
+  background-color: green;
+  border: none;
+
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: $yellow;
+  color: $purple;
+
+  &:hover {
+    background-color: $purple;
+    color: $yellow;
+  }
+}
+
+.purple {
+  background-color: $purple;
+  color: $yellow;
+
+  &:hover {
+    background-color: $yellow;
+    color: $purple;
+  }
+}
+
+.small {
+  padding: 10px 20px;
+  border-radius: 25px;
+}

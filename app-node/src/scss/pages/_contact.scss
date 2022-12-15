@@ -1,0 +1,80 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 200px;
+  margin-bottom: 100px;
+  &__form {
+    height: 500px;
+    width: 500px;
+    //background-color: $light-grey;
+    padding: 25px;
+    border-radius: $border-radius;
+
+    //
+    display: flex;
+    flex-direction: column;
+
+    &__inputs {
+      display: flex;
+      gap: $gap;
+
+      &__input {
+        margin-top: 25px;
+        width: 96%;
+        border: none;
+        background-color: $light-grey;
+        padding: 5px 10px;
+        border-radius: $border-radius;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &__textarea {
+      margin-top: 25px;
+      border: none;
+
+      background-color: $light-grey;
+      border-radius: $border-radius;
+      padding: 5px 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__button {
+      margin-top: 50px;
+      background-color: $purple;
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+      color: white;
+
+      &:hover {
+        background: linear-gradient(
+          124deg,
+          rgba(63, 63, 99, 1) 0%,
+          rgba(94, 94, 170, 1) 0%,
+          rgba(255, 204, 81, 1) 100%
+        );
+      }
+    }
+  }
+  &__map {
+    border-radius: $border-radius;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 100px;
+
+    &__map {
+      width: 100vh;
+    }
+  }
+}

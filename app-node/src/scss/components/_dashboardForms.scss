@@ -1,0 +1,61 @@
+.dashboardformdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .dashboardform {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    //
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__label {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__input {
+      background-color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+      //width: 80%;
+      width: 800px;
+    }
+
+    &__select {
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+    }
+    &__textarea {
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+    }
+
+    &__button {
+      border: none;
+      background-color: $purple;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+.editTitle {
+  color: $purple;
+  margin-left: 100px;
+}

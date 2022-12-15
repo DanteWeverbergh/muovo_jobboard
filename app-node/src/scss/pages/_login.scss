@@ -1,0 +1,27 @@
+.formdiv {
+  &__form {
+    &__link {
+      margin-bottom: 25px;
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: $accent-blue;
+        }
+      }
+    }
+  }
+}
+
+.password {
+  margin-bottom: 25px;
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $accent-blue;
+    }
+  }
+}

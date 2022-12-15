@@ -1,0 +1,120 @@
+.margin-left {
+  margin-left: 100px;
+}
+
+.searchHome {
+  background-color: $purple-light;
+  padding: 100px 200px;
+
+  h3 {
+    font-size: 16px;
+    color: $purple;
+    margin-top: 45px;
+  }
+
+  &__title {
+    font-weight: bolder;
+    color: $purple;
+    font-size: 40px;
+    strong {
+      font-weight: bold;
+      border-bottom: 5px solid $yellow;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    //margin-left: 100px;
+    input {
+      width: 100%;
+      padding: 15px;
+      border: 3px solid $purple;
+      border-radius: $border-radius;
+      &::placeholder {
+        color: $purple;
+        font-size: 20px;
+      }
+    }
+
+    &__icon {
+      background-color: $yellow;
+      padding: 10px;
+      border-radius: $border-radius;
+      font-size: 20px;
+      color: $purple;
+      position: absolute;
+      right: -25px;
+      top: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $purple;
+        color: $yellow;
+      }
+    }
+  }
+
+  &__featured {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.input {
+  position: relative;
+  max-width: 900px;
+}
+
+.FeaturedSearch {
+  background-color: $purple;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: $border-radius;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $yellow;
+
+    .FeaturedSearch__icon {
+      color: $purple;
+    }
+  }
+
+  &__icon {
+    color: $yellow;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //
+  .searchHome {
+    padding: 10px 15px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__form {
+      .input {
+        max-width: 75%;
+      }
+    }
+
+    &__featured {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  .FeaturedSearch {
+    font-size: 12px;
+  }
+}

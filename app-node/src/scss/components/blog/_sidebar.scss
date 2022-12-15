@@ -1,0 +1,95 @@
+.sidebarBlog {
+  //background-color: white;
+
+  padding-top: 150px;
+  width: 25%;
+  //z-index: -1;
+  z-index: 0;
+
+  &__form {
+    position: relative;
+    margin-bottom: 45px;
+    //
+    input {
+      border: none;
+      background-color: $light-grey;
+      padding: 5px 10px;
+      border-radius: $border-radius;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 30px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: linear-gradient(
+        124deg,
+        rgba(63, 63, 99, 1) 0%,
+        rgba(94, 94, 170, 1) 0%,
+        rgba(255, 204, 81, 1) 100%
+      );
+      color: white;
+      border-radius: $border-radius;
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    width: 130px;
+    margin-bottom: 45px;
+  }
+
+  &__categories {
+    &__title {
+      color: $purple;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      padding: 0;
+      list-style-type: none;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__jobs {
+    h1 {
+      padding: 0;
+      margin: 0;
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      color: $purple;
+    }
+    h4 {
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      font-weight: bolder;
+    }
+
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      &__item {
+        font-size: 14px;
+      }
+    }
+  }
+}

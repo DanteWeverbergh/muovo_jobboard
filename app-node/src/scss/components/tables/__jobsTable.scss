@@ -1,0 +1,106 @@
+.job {
+  margin: 0 10%;
+  &__table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 150px;
+
+    &__header {
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px;
+      height: 80px;
+      &__row {
+        background-color: white;
+        color: $purple;
+        &__cell {
+          &__icon {
+            //
+          }
+        }
+      }
+    }
+
+    &__body {
+      &__row {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px;
+        background-color: white;
+
+        &:first-child {
+          border-radius: $border-radius $border-radius 0px 0px;
+        }
+        &:last-child {
+          border-radius: 0px 0px $border-radius $border-radius;
+        }
+
+        &__cell {
+          padding: 25px 0px;
+          text-align: center;
+          vertical-align: center;
+
+          &__title {
+            cursor: pointer;
+          }
+
+          &__applicants {
+            color: $purple;
+            margin-left: 25px;
+          }
+
+          &__status__active {
+            //
+            background-color: $green;
+            color: $green-text;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          }
+
+          &__status__expired {
+            background-color: $red;
+            color: $red-text;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          }
+
+          input {
+            box-shadow: inset 2px 0px 3px rgba(0, 0, 0, 0.16);
+            margin-left: 25px;
+            appearance: none;
+            height: 30px;
+            width: 30px;
+            background-color: $light-grey;
+            border-radius: $border-radius;
+
+            &:checked {
+              background-color: $purple;
+            }
+          }
+
+          &__icon {
+            color: $purple;
+          }
+        }
+      }
+    }
+  }
+}
+
+//margin betwwen thead en tbody
+
+tbody:before {
+  line-height: 1em;
+  content: '.';
+  color: white; /* bacground color */
+  display: block;
+}
+
+.click {
+  cursor: pointer;
+}

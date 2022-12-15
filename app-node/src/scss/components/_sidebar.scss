@@ -1,0 +1,134 @@
+/*
+* Sidebar
+*/
+
+.sidebar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  border-radius: 0px $border-radius $border-radius 0px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 10px;
+
+  &__header {
+    //
+
+    margin-top: 50px;
+    margin-left: 50px;
+
+    //background-color: $purple;
+
+    &__logo {
+      &__icon {
+        width: 100px;
+        height: 100px;
+        color: $purple-dark;
+      }
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  &__content {
+    //
+    &__list {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 50px;
+
+      &__item {
+        margin-bottom: 20px;
+
+        &__button {
+          background-color: $light-grey;
+          border-radius: 20px;
+          border: none;
+          padding: 10px 20px;
+          color: $purple;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $purple;
+            color: $yellow;
+          }
+        }
+
+        &__sublist {
+          &__item {
+            //
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    &__logo {
+      img {
+        width: 50%;
+        margin-left: 50px;
+      }
+    }
+    background-color: $purple-dark;
+    color: white;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    h1 {
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      margin-left: 50px;
+    }
+
+    h3 {
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+      font-weight: normal;
+      margin-left: 50px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__copyrightfooter {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $purple;
+
+    strong {
+      margin-left: 3px;
+    }
+  }
+}
+
+.content {
+  margin-left: 280px;
+}
+
+.dashboardContainer {
+  background-color: $purple-light;
+  height: 100%;
+  min-height: 100vh;
+  //
+  margin-left: 20%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

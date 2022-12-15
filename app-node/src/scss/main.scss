@@ -1,0 +1,197 @@
+// CSS for use on every page. Added with normalize.css in pages/_app.tsx.
+
+@import 'variables';
+@import 'typography';
+
+//pages
+@import './pages/login';
+@import './pages/manageJobs';
+
+@import './pages/profile';
+
+@import './pages/contact';
+@import './pages/companies';
+@import './pages/blog';
+@import './pages/404';
+@import './pages/alerts';
+@import './pages/test';
+@import './pages/categroyArchive';
+@import './pages/jobs/sectors';
+@import './pages/auth/forgotpassword';
+@import './pages/manageCompany';
+@import './pages/pacakges';
+@import './pages/myapplications';
+
+//jobs
+@import './pages/jobs/applicants.scss';
+
+//blog
+@import './components/blog/sidebar';
+
+//Components
+@import './components/header';
+@import './components/forms';
+@import './components/register';
+@import './components/table';
+@import './components/sidebar';
+@import './components/backButton';
+@import './components/link';
+@import './components/search';
+@import './components/pagination';
+@import './components/modal/headerModal';
+@import './components/dragDrop';
+@import './components/cards/BlogCard';
+@import './components/dashboardForms';
+
+//table
+@import './components/tables/_jobsTable';
+
+//jobs
+@import './components/jobs/jobFilters';
+@import './components/jobs/status';
+
+//footer
+@import './components/Footer/copyrightFooter';
+@import './components/Footer/footer';
+
+//cards
+@import './components/cards/packageCards';
+@import './components/cards/jobCards';
+@import './components/cards/CompanyCard';
+@import './components/cards/AdminJobCard';
+@import './components/cards/ApplyCard';
+@import './components/cards/sectorCard';
+@import './components/cards/nothinghere';
+
+//tables
+
+//buttons
+@import './components/buttons/button';
+
+//container
+@import './components/container';
+
+//home
+@import './components/home/search';
+@import './components/home/featuredRoles';
+@import './components/home/directory';
+@import './components/home/blog';
+
+@import './pages/home';
+@import './components/contentContainer';
+
+.container {
+  padding: 0px 50px;
+}
+
+@import './pages/jobs';
+
+.marginHeader {
+  padding-top: 75px;
+}
+
+.mainContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+/*
+* Standard styling
+*/
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  //background-color: $background;
+  //color: $light-color;
+  font-size: 18px;
+  line-height: 1.6;
+
+  /*
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: $content-width;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.content-page .wrap,
+.content-single .wrap,
+.content-index .wrap {
+  padding: 55px 10px;
+}
+
+@media screen and (min-width: $content-width) {
+  .wrap {
+    padding: 0;
+  }
+
+  .content-page .wrap,
+  .content-single .wrap,
+  .content-index .wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content .button {
+  background-color: $color-primary;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.content .button:focus,
+.content .button:hover {
+  background-color: lighten($color-primary, 10);
+}
+
+.content .button-secondary {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.content .button-secondary:focus,
+.content .button-secondary:hover {
+  background-color: darken($color-white, 10);
+}
+
+.pagination ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination.has-next.has-previous ul {
+  column-count: 2;
+}
+
+.pagination-next {
+  text-align: right;
+}

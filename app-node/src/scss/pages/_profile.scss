@@ -1,0 +1,79 @@
+.alerts {
+  padding: 0px 50px;
+  &__title {
+    //
+  }
+
+  &__icon {
+    background-color: $accent;
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+    padding: 5px;
+
+    &:hover {
+      background-color: $accent-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.password {
+  cursor: pointer;
+  a {
+    color: $accent;
+  }
+}
+
+.updateProfile {
+  display: flex;
+  justify-content: center;
+}
+
+.cv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  object {
+    border-radius: $border-radius;
+    width: 620px;
+    height: 877px;
+  }
+}
+
+.downloadBtn {
+  margin-top: 25px;
+  border-radius: $border-radius;
+  padding: 10px 20px;
+  background-color: $purple;
+  cursor: pointer;
+  a {
+    color: white;
+  }
+
+  &:hover {
+    background-color: $yellow;
+  }
+}
+
+.profileContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $gap;
+}
+
+.editAccount {
+  .formdiv {
+  }
+}
+
+.profile {
+  &__title {
+    color: $purple;
+    padding-top: 100px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,113 @@
+.alert {
+  margin: 0px 15%;
+
+  &__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+    &__header {
+      // background-color: white;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 10, 0.16) 0px 0px 10px;
+      height: 80px;
+
+      &__row {
+        &__cell {
+          color: $purple;
+          input {
+            margin-left: 25px;
+            appearance: none;
+            height: 30px;
+            width: 30px;
+            background-color: $light-grey;
+            border-radius: $border-radius;
+
+            &:checked {
+              background-color: $purple;
+            }
+          }
+        }
+      }
+    }
+
+    &__body {
+      // background-color: white;
+
+      &__row {
+        box-shadow: rgba(0, 0, 10, 0.16) 0px 0px 10px;
+
+        &:first-child {
+          border-radius: $border-radius $border-radius 0px 0px;
+        }
+
+        &:last-child {
+          border-radius: 0px 0px $border-radius $border-radius;
+        }
+        &__cell {
+          padding: 25px 0px;
+          text-align: center;
+          vertical-align: center;
+
+          input {
+            margin-left: 25px;
+            appearance: none;
+            height: 30px;
+            width: 30px;
+            background-color: $light-grey;
+            border-radius: $border-radius;
+
+            &:checked {
+              background-color: $purple;
+            }
+          }
+
+          &__select {
+            background-color: $light-grey;
+            border: none;
+            border-radius: $border-radius;
+            width: 250px;
+            padding: 5px 10px;
+            &__option {
+            }
+          }
+          &__icon {
+            // color: $purple;
+            cursor: pointer;
+            color: $line-grey;
+            margin-right: 15px;
+
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 25px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid $line-grey;
+    color: $line-grey;
+    line-height: 15px;
+
+    &:hover {
+      color: $purple;
+      border-bottom: 1px solid $purple;
+    }
+  }
+}
+
+tbody:before {
+  line-height: 1em;
+  content: '.';
+  color: white; /* bacground color */
+  display: block;
+}
+
+.alert__table__body {
+  background-color: none;
+}

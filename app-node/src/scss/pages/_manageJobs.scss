@@ -1,0 +1,20 @@
+/*
+* Manage job
+*/
+
+.job__button {
+  background-color: $accent-blue;
+  border: none;
+  color: white;
+  padding: 50px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 100%;
+
+  &:hover {
+    background-color: $accent;
+    color: $accent-blue;
+    cursor: pointer;
+  }
+}

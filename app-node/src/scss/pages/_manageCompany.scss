@@ -1,0 +1,85 @@
+.manageCompany {
+  &__title {
+    color: $purple;
+  }
+
+  h3 {
+    width: 200px;
+  }
+
+  &__header {
+    &__company {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      &__buttons {
+        display: flex;
+        gap: 15px;
+      }
+
+      &__button {
+        width: 150px;
+        background-color: $purple;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: $border-radius;
+        &:hover {
+          background-color: $yellow;
+          color: $purple;
+        }
+      }
+
+      &__button.save {
+        background-color: $green;
+        &:hover {
+          background-color: $purple;
+          color: white;
+        }
+      }
+
+      &__button.cancel {
+        background-color: $red;
+        &:hover {
+          background-color: $purple;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    &__textarea {
+      border: none;
+      border-radius: $border-radius;
+      width: 100%;
+
+      &::placeholder {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.manageCompany {
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    &__input {
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+      width: 50%;
+    }
+  }
+}

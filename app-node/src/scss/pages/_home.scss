@@ -1,0 +1,9 @@
+.home {
+  &__title {
+    text-align: center;
+  }
+
+  //border: 3px solid $purple;
+  border-radius: $border-radius;
+  margin: 40px 10%;
+}
